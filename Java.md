@@ -124,3 +124,14 @@ Class
   - 동적 로딩이란, 컴파일 시에 데이터 타입이 모두 binding 되어 자료형이 로딩되는 것이 아니라 `실행 중`에 데이터 타입을 알고 binding 되는 방식
   - 실행 시에 로딩되므로 경우에 따라 다른 클래스가 사용될 수 있어 유용
     - 컴파일 타임에 체크할 수 없으므로 해당 문자열에 대한 클래스가 없는 경우 예외(ClassNotFoundException)이 발생할 수 있음
+
+String, Wrapper 클래스
+-  String은 한번 선언되거나 생성된 문자열을 변경할 수 없음
+-  String 클래스의 concat() 메서드 혹은 "+"를 이용하여 String을 연결하는 경우 문자열은 새로 생성됨
+-  StringBuilder, StringBuffer - 가변적인 char[] 배열을 멤버변수라 가지고 있는 클래스, 문자열을 변경하거나 연결하는 경우 사용하면 편리한 클래스
+-  StringBuffer는 멀티 쓰레드 프로그래밍에서 동기화(Synchronization)이 보장되고, 단일 스레드에서는 StringBuilder를 사용하는 것이 좋음
+-  toString() 메서드로 String 반환
+-  Wrapper 클래스 : 기본 자료형에 대한 클래스
+
+제네릭 프로그래밍
+- 
