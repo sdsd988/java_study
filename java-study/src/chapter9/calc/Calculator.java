@@ -1,4 +1,4 @@
-package chapter9;
+package chapter9.calc;
 
 public abstract class Calculator implements Calc{
     @Override

@@ -1,4 +1,4 @@
-package chapter9;
+package chapter9.calc;
 
 public class CompleteCalc extends Calculator {
 
@@ -16,7 +16,15 @@ public class CompleteCalc extends Calculator {
         }
     }
 
+    @Override
+    public void description() {
+        System.out.println("재정의한 계산기 구현 입니다.");
+    }
+
     public void showInfo(){
         System.out.println("모두 구현하였습니다.");
     }
+
+
+
 }
