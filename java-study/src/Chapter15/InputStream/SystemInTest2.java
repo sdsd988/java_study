@@ -10,7 +10,7 @@ public class SystemInTest2 {
 
         try {
             int i;
-            InputStreamReader isr = new InputStreamReader(System.in);
+            InputStreamReader isr = new InputStreamReader(System.in); //바이트로 입력된 값을 문자로
             while ((i = isr.read()) != '끝'){
                 System.out.print((char) i);
             }

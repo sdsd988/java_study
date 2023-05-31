@@ -214,3 +214,26 @@ String, Wrapper 클래스
     - 자료의 종류 : 바이트, 문자 스트림
     - 스트림의 기능 : 기반, 보조 스트림
   - 표준 입출력 :System.in,out / Scanner / Console
+- 바이트 단위 스트림
+  - InputStream : 바이트 단위 입력 스트림 최상위 클래스
+  - OutputStream : 바이트 단위 출력 스트림 최상위 클래스
+  - 추상 메서드를 초함한 추상 클래스로 하위 클래스가 구현하여 사용
+  - FileInputStream, FileOutputStream
+    - 파일을 한 바이트씩 자료를 읽고 쓰는데 사용
+    - 입력 스트리은 파일이 없는 경우 예외 발생
+    - 출력 스트림은 파일이 없는 경우 파일 생성하여 출력
+- 문자 단위 스트림
+  - Reader : 문자 단위로 읽는 최상위 스트림
+  - Write : 문자 단위로 쓰는 최상위 스트림
+  - FileReader,Writer
+- 보조 스트림
+  - 실제 읽고 쓰는 스트림이 아닌 보조적인 기능을 추가하는 스트림
+  - FilterInputStream, FilterOutputStream이 보조스트림의 상위 클래스
+  - InputStream - InputStreamReader - BufferedReader
+  - FileOutputStream - DataOutputStream,DataInputStream
+  - 데코레이터 패턴
+- 직렬화
+  - 인스턴스 상태를 그대로 저장하거나 네트웍으로 전송하고 이를 다시 복원(역직렬화) 하는 방식
+  - ObjectInputStream, ObjectOutputStream 사용, 보조 스트림
+  - 직렬화는 인스턴스의 내용이 외부(파일, 네트워크)로 유출되는 것이므로 프로그래머가 객체의 직렬화 가능 여부를 명시함
+  - 구현 코드가 없는 mark interface
